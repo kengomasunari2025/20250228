@@ -41,7 +41,7 @@ const App = () => {
     }, 3000);
 
     return () => {
-      clearTimeout(timer1); // Cleanup timeout on component unmount
+      clearTimeout(timer1);
     };
   }, []);
 

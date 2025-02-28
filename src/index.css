@@ -212,7 +212,7 @@ li {
   justify-content: center;
 }
 .w-90-parsent {
-  width: 95%;
+  width: 97%;
   margin: 0 auto;
 }
 .slider-btn {
@@ -220,25 +220,4 @@ li {
   border-radius: 100%;
   font-size: 10px;
   line-height: 15px;
-}
-.mainSite {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 1s, visibility 1s;
-}
-.mainSite.hidden {
-  display: none;
-  visibility: hidden;
-}
-.anime {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-}
-.anime img {
-  width: 100%;
-  height: 100vh;
 }

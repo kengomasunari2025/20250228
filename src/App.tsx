@@ -3,6 +3,7 @@ import Kengo from "./React/Kengo";
 import "./App.css";
 import GifImg from "../src/React/Fv/Videotogif.gif";
 import Header from "./React/Header/Header";
+import FvImg from "./React/Fv/Fv.jpg";
 
 const App = () => {
   const [text, setText] = useState("");
@@ -29,6 +30,12 @@ const App = () => {
     Typing("Made By React");
   }, []);
 
+  const BgOnImages = {
+    backgroundImage: `url(${FvImg})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    opacity: 1,
+  };
   const NoBr = {
     whiteSpace: "nowrap",
   };
@@ -51,7 +58,7 @@ const App = () => {
         <Header />
       </header>
       {loading && (
-        <div id="top" className="anime" style={{ position: "relative" }}>
+        <div id="top" className="anime" style={{ ...BgOnImages,position: "relative" }}>
           <img src={GifImg} alt="Loading" />
           <div
             className="overlay-text"
